@@ -53,4 +53,4 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.action_repository }}:${{ steps.release.outputs.name }}
+            ghcr.io/schizofreny/docker-bentoml-builder:${{ steps.release.outputs.name }}
