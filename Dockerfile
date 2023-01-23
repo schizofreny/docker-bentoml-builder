@@ -2,7 +2,7 @@ FROM python:3.8.14
 
 RUN apt update && \
   apt-get upgrade -y && \
-  apt install -y jq ffmpeg libsm6 libxext6 wget gcc && \
+  apt install -y jq ffmpeg libsm6 libxext6 wget gcc buildah && \
   wget https://github.com/moby/buildkit/releases/download/v0.11.1/buildkit-v0.11.1.linux-amd64.tar.gz && \
   tar -xvzf buildkit-v0.11.1.linux-amd64.tar.gz && \
   chmod +x ./bin/buildctl && \
