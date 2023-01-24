@@ -8,5 +8,5 @@ RUN apt update && \
   chmod +x ./bin/buildctl && \
   cp ./bin/* /usr/local/bin && \
   rm -rf ./bin && \
-  pip install bentoml==1.0.12 onnx==1.13.0 onnxruntime==1.13.1 mlflow==2.1.1 boto3==1.26.44 && \
-  rm -rf /var/lib/apt/lists/*
+  pip install bentoml==1.0.12 onnx==1.13.0 onnxruntime==1.13.1 mlflow==2.1.1 boto3==1.26.44
+# rm -rf /var/lib/apt/lists/*
